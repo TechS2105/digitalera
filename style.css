@@ -1,0 +1,1543 @@
+@font-face{
+
+    font-family: spacefont;
+    src: url(./SpaceGrotesk-VariableFont_wght.ttf);
+
+}
+
+*{
+
+    margin: 0;
+    padding: 0;
+
+}
+
+::selection{
+
+    background-color: #B9FF66;
+    color: #111;
+
+}
+
+html{
+
+    scroll-behavior: smooth;
+
+}
+
+header{
+
+    width: 100%;
+    height: 90px;
+
+}
+
+header > .headersection{
+
+    position: fixed;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+    background-color: #fff;
+
+}
+
+.headersection > nav{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0px 100px;
+
+}
+
+/** logo section */
+
+nav > .logo{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    gap: 5px;
+    font-family: spacefont;
+    background-color: #111;
+    padding: 5px 20px;
+    border-radius: 50px;
+    color: #fff;
+
+}
+
+nav > .logo i{
+
+    transform: rotate(45deg);
+    font-size: 30px;
+    color: #B9FF66;
+
+}
+
+/** menu section */
+
+nav > .menu ul{
+    
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-family: spacefont;
+
+}
+
+nav > .menu ul li{
+
+    /* margin-right: 40px; */
+    list-style-type: none;
+    font-size: 17px;
+
+}
+
+nav > .menu ul li a{
+
+    color: #111;
+    text-decoration: none;
+    font-weight: 500;
+
+}
+
+nav > .menu ul li a:hover{
+
+    color: #B9FF66;
+    transition: all 1s ease;
+
+}
+
+.menu ul li a button{
+
+    width: 200px;
+    padding: 5px;
+    font-size: 18px;
+    font-family: spacefont;
+    background-color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid #111;
+    font-weight: 500;
+
+}
+
+.menu ul #menubar, #close{
+
+    display: none;
+
+}
+
+.menu ul #darkmode{
+
+    font-size: 25px;
+    cursor: pointer;
+
+}
+
+.menu ul #lightmode {
+
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+    color: #fff;
+
+}
+
+/** responsive menu */
+.responsivemenu {
+
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 999;
+    background-color: #ffff;
+    padding-left: 20px;
+    padding-top: 20px;
+    display: none;
+
+}
+
+.responsivemenu>ul li {
+
+    list-style-type: none;
+    line-height: 50px;
+    font-size: 20px;
+    font-family: spacefont;
+
+}
+
+.responsivemenu>ul li a {
+
+    color: #111;
+    text-decoration: none;
+
+}
+
+.responsivemenu>ul li a button {
+
+    width: 360px;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    font-family: spacefont;
+    background-color: transparent;
+    border: 1px solid black;
+
+}
+
+/** Hero section */
+
+.herosection {
+
+    width: 100%;
+
+}
+
+.herosection > .subherosection{
+
+    display: flex;
+    padding: 80px 100px 80px 100px;
+    overflow: hidden;
+
+}
+
+.subherosection > .textdiv{
+
+    width: 50%;
+
+}
+
+.textdiv > h1{
+
+    font-family: spacefont;
+    font-size: 60px;
+    margin-bottom: 30px;
+    line-height: 70px;
+
+}
+
+.textdiv > p{
+
+    font-family: spacefont;
+    line-height: 25px;
+    margin-bottom: 30px;
+    width: 650px;
+
+}
+
+.textdiv > button{
+
+    width: 250px;
+    height: 50px;
+    background-color: #111;
+    color: #fff;
+    font-family: spacefont;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 5px 5px #111;
+
+}
+
+.textdiv > button:hover{
+
+    background-color: #B9FF66;
+    transition: all 0.5s ease-in;
+    color: #111;
+    border: none;
+    font-weight: 500;
+
+}
+
+.subherosection > .imgdiv{
+
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.subherosection > .imgdiv img{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0px 5px 10px #111;
+    border: 2px solid white;
+
+}
+
+/** Company logo section */
+.companylogo{
+
+    width: 100%;
+    height: 100px;
+
+}
+
+.companylogo > .logobody{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    overflow: hidden;
+
+}
+
+.logobody > img{
+
+    width: 120px;
+    object-fit: contain;
+
+}
+
+/** Service text section */
+
+.servicetextsection {
+
+    width: 100%;
+    height: 140px;
+    overflow: hidden;
+
+}
+
+.servicetextsection > .stext{
+
+    padding: 0px 100px;
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    gap: 30px;
+
+}
+
+.stext > h2{
+
+    font-family: spacefont;
+    font-size: 35px;
+    background-color: #B9FF66;
+    padding: 5px 10px;
+    border-radius: 10px;
+
+}
+
+.stext > p{
+
+    width: 850px;
+    font-size: 16px;
+    font-family: spacefont;
+
+}
+
+/** Service section box */
+
+.servicesection{
+
+    width: 100%;
+    height: 110vh;
+    margin-top: 90px;
+    padding: 0px 0px 20px 0px;
+
+}
+
+.servicesection > .servicesectionbox{
+
+    padding: 0px 10px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    overflow: hidden;
+
+}
+
+.servicesectionbox > .box{
+
+    width: 650px;
+    height: 350px;
+    border-radius: 50px;
+    box-shadow: 0px 5px #111;
+    border: 1px solid #111;
+    display: flex;
+    align-items: center;
+
+}
+
+:is(.two, .three){
+
+    background-color: #111;
+
+}
+
+:is(.one, .four){
+
+    background-color: #F3F3F3;
+
+}
+
+/** first service box */
+
+.box > .firstboxsection{
+
+    padding: 50px 50px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.firstboxsection > .boxtext{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+
+}
+
+.boxtext > h3{
+
+    font-family: spacefont;
+    font-size: 30px;
+    font-weight: 500;
+
+}
+
+.boxtext > h3 #span1{
+
+    padding: 5px 5px;
+    background-color: #B9FF66;
+    border-radius: 10px;
+
+}
+
+.boxtext > h3 #span2{
+
+    background-color: #B9FF66;
+    padding: 0px 5px 5px 5px ;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+.boxtext > .learnmorebtn{
+
+    width: 100%;
+    padding: 10px 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px
+
+}
+
+.learnmorebtn > i{
+
+    font-size: 20px;
+    background-color: #111;
+    padding: 10px;
+    border-radius: 50%;
+    color: #B9FF66;
+
+}
+
+.learnmorebtn > a{
+
+    color: #111;
+    font-family: spacefont;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+.firstboxsection > .imgbox{
+
+    width: 50%;
+
+}
+
+.imgbox > img{
+
+    width: 300px;
+    object-fit: cover;
+
+}
+
+/** second service box */
+
+.boxtext > h3 #span3{
+
+    background-color: #fff;
+    padding: 5px 5px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+.boxtext > h3 #span4{
+
+    background-color: #fff;
+    padding: 0px 5px 5px 5px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+
+.boxtext > .learnmorebtn2{
+
+    width: 100%;
+    padding: 10px 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px
+
+}
+
+.learnmorebtn2 > a{
+
+    font-size: 20px;
+    font-family: spacefont;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+
+}
+
+.learnmorebtn2 i{
+
+    font-size: 18px;
+    background-color: #B9FF66;
+    padding: 10px;
+    border-radius: 50%;
+    font-weight: 600;
+
+}
+
+/** Let make things happen section */
+
+.letmakethingsbox{
+
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
+    overflow: hidden;
+
+}
+
+.letmakethingsbox > .letmakethings{
+
+    background-color: #F3F3F3;
+    width: 1350px;
+    height: 45vh;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+
+}
+
+.letmakethings > .letmakethingtext{
+
+    width: 50%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+
+
+}
+
+.letmakethingtext > h3{
+
+    font-size: 30px;
+    font-family: spacefont;
+    margin-bottom: 20px;
+
+}
+
+.letmakethingtext > p{
+
+    font-size: 17px;
+    font-family: spacefont;
+    margin-bottom: 20px;
+
+}
+
+.letmakethingtext > a button{
+
+    width: 250px;
+    height: 50px;
+    background-color: #111;
+    color: #fff;
+    font-family: spacefont;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+
+}
+
+.letmakethingtext > a button:hover{
+
+    background-color: #B9FF66;
+    transition: all 0.5s ease-in;
+    border: none;
+    color: #111;
+    font-weight: 500;
+
+}
+
+.letmakethings > .letmakethingimg{
+
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.letmakethingimg > img{
+
+    width: 500px;
+
+}
+
+/** Case study section */
+
+.casestudysection {
+
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    overflow: hidden;
+
+}
+
+.casestudysection > .casestudytextsection{
+
+    width: 100%;
+    height: 100%;
+    padding: 0px 100px;
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+
+}
+
+.casestudytextsection > h2{
+
+    background-color: #B9FF66;
+    font-family: spacefont;
+    font-size: 35px;
+    color: #111;
+    padding: 5px 10px;
+    border-radius: 10px;
+
+}
+
+.casestudytextsection > p{
+
+    width: 700px;
+    font-size: 18px;
+    font-family: spacefont;
+
+}
+
+/** Case study section box */
+
+.casestudysectionbox{
+
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.casestudysectionbox > .casestudybox{
+
+    width: 1350px;
+    background-color: #191A23;
+    height: 50vh;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.casestudybox > .casebox1{
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 0px 50px 0px 90px;
+    border-right: 20px dashed snow;
+    border-radius: 50%;
+
+}
+
+.casebox1 > p{
+
+    font-size: 18px;
+    color: #fff;
+    font-family: spacefont;
+    line-height: 30px;
+    margin-bottom: 20px;
+
+}
+
+.casebox1 > .casebtn{
+
+    width: 100%;
+
+}
+
+.casebtn > a{
+
+    font-size: 20px;
+    color: #B9FF66;
+    text-decoration: none;
+    font-family: spacefont;
+
+}
+
+.casebtn > i{
+
+    color: #B9FF66;
+    font-size: 30px;
+
+}
+
+.casestudybox > .casebox2 {
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 0px 50px 0px 90px;
+    border-right: 20px dashed snow;
+    border-radius: 50%;
+
+}
+
+.casebox2 > p {
+
+    font-size: 18px;
+    color: #fff;
+    font-family: spacefont;
+    line-height: 30px;
+    margin-bottom: 20px;
+
+}
+
+.casebox2 >.casebtn {
+
+    width: 100%;
+
+}
+
+.casebtn > a {
+
+    font-size: 20px;
+    color: #B9FF66;
+    text-decoration: none;
+    font-family: spacefont;
+
+}
+
+.casebtn > i {
+
+    color: #B9FF66;
+    font-size: 30px;
+
+}
+
+.casestudybox>.casebox3 {
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 0px 50px 0px 90px;
+    border-right: 20px dashed snow;
+    border-radius: 50%;
+
+}
+
+.casebox3 > p {
+
+    font-size: 18px;
+    color: #fff;
+    font-family: spacefont;
+    line-height: 30px;
+    margin-bottom: 20px;
+
+}
+
+.casebox3 > .casebtn {
+
+    width: 100%;
+
+}
+
+.casebtn > a {
+
+    font-size: 20px;
+    color: #B9FF66;
+    text-decoration: none;
+    font-family: spacefont;
+
+}
+
+.casebtn > i {
+
+    color: #B9FF66;
+    font-size: 30px;
+
+}
+
+/** working process section */
+.workingprocesssection{
+
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: end;
+    overflow: hidden;
+
+}
+
+.workingprocesssection > .workingprocesstext{
+
+    padding: 0px 100px;
+    display: flex;
+    gap: 20px;
+
+}
+
+.workingprocesstext > h2{
+
+    padding: 5px 10px 5px 10px;
+    font-size: 35px;
+    font-family: spacefont;
+    background-color: #B9FF66;
+    border-radius: 10px;
+
+}
+
+.workingprocesstext > p{
+
+    width: 750px;
+    font-size: 16px;
+    font-family: spacefont;
+
+}
+
+/** working toggle box section */
+
+.workingtoggleboxsection{
+
+    width: 100%;
+    height: 160vh;
+    overflow: hidden;
+
+}
+
+.workingtoggleboxsection > .toggleboxes{
+
+    padding: 90px 100px 50px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.toggleboxes > .togglebox{
+
+    display: flex;
+    flex-direction: column;
+    background-color: #F3F3F3;
+    padding: 30px 30px 20px 30px;
+    border-radius: 50px;
+    box-shadow: 0px 5px #111;
+    border: 1px solid #111;
+
+}
+
+/** toggle box heading text section */
+
+.togglebox > .headingtext{
+
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+
+.headingtext > .toggletext{
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.toggletext > h2{
+
+    font-size: 60px;
+    font-family: spacefont;
+
+}
+
+.toggletext > p{
+
+    font-size: 20px;
+    font-weight: 500;
+    font-family: spacefont;
+
+}
+
+.headingtext > .toggleicon {
+
+    position: relative;
+    top: -10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: start;
+    transition: all 0.5s ease;
+    height: 40px;
+    transform: rotate(0deg);
+
+}
+
+.headingtext > .toggleicon i{
+
+    font-size: 32px;
+    border: 1px solid #111;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+/** toggle box sub heading text section */
+
+.togglebox > .subheadingtext{
+
+    display: none;
+
+}
+
+.togglebox > .subheadingtext {
+
+    padding: 20px 0px 20px 0px;
+
+}
+
+.togglebox > .subheadingtext p{
+
+    padding-top: 20px;
+    width: 700px;
+    font-family: spacefont;
+    line-height: 25px;
+    font-size: 16px;
+    
+}
+
+/** This section is for javasript toggle icon animation */
+
+/** Toggle box height */
+.toggleheightboxes{
+
+    height: 250vh;
+    background-color: brown;
+
+}
+
+/** Toggle icon 1*/
+.icon1{
+
+    transform: rotate(45deg);
+    transition: all 0.3s ease-in-out
+
+}
+
+/** Toggle icon 2*/
+.icon2 {
+
+    transform: rotate(45deg);
+    transition: all 0.3s ease-in-out
+}
+
+/** Toggle icon 3*/
+.icon3 {
+
+    transform: rotate(45deg);
+    transition: all 0.3s ease-in-out
+}
+
+/** Toggle icon 4*/
+.icon4 {
+
+    transform: rotate(45deg);
+    transition: all 0.3s ease-in-out
+}
+
+/** Toggle icon 5*/
+.icon5 {
+
+    transform: rotate(45deg);
+    transition: all 0.3s ease-in-out
+
+}
+
+/** Toggle icon 6*/
+.icon6 {
+
+    transform: rotate(45deg);
+    transition: all 0.3s ease-in-out
+}
+
+/** Team section */
+
+.teamsection{
+
+    width: 100%;
+    height: 10vh;
+    overflow: hidden;
+
+}
+
+.teamsection > .teamsectiontext{
+
+    padding: 0px 100px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.teamsectiontext > h2{
+
+    font-family: spacefont;
+    font-size: 35px;
+    background-color: #B9FF66;
+    border-radius: 10px;
+    padding: 5px 10px;
+
+}
+
+.teamsectiontext > p{
+
+    width: 760px;
+    font-family: spacefont;
+    font-size: 16px;
+
+}
+
+/** team section boxes */
+
+.teamsectionboxes{
+
+    width: 100%;
+    height: 150vh;
+    overflow: hidden;
+
+}
+
+.teamsectionboxes > .teamboxes{
+
+    padding: 0px 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+    gap: 50px;
+
+}
+
+.teamboxes > .teambox{
+
+    background-color: #fff;
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+    border-radius: 50px;
+    box-shadow: 0px 5px #111;
+
+}
+
+.teambox > .teamimg{
+
+    display: flex;
+    padding: 20px 20px;
+
+
+}
+
+.teamimg > .teamimgtext{
+
+    display: flex;
+    gap: 20px;
+
+}
+
+.teamimgtext > img{
+
+    width: 130px;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0px 5px 5px #111;
+
+}
+
+.teamimgtext > .teamsocialicon {
+
+    padding-top: 20px;
+
+}
+
+.teamsocialicon > i{
+
+    font-size: 25px;
+    background-color: #111;
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 50%;
+
+}
+
+.teamimgtext > .teamnametext{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+}
+
+.teamnametext > h3{
+
+    font-family: spacefont;
+    font-size: 19px;
+
+}
+
+.teamnametext > p{
+
+    font-size: 18px;
+    font-family: spacefont;
+
+}
+
+.teambox > .teamtext{
+
+    padding: 30px;
+
+}
+
+.teamtext > hr{
+
+    height: 5px;
+    background-color: #111;
+    border-radius: 50%;
+
+}
+
+.teamtext > p{
+
+    padding-top: 30px;
+    font-family: spacefont;
+    font-size: 16px;
+
+}
+
+/** Contact us section */
+
+.contactussection{
+
+    height: 10vh;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+
+}
+
+.contactussection > .contactustext{
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0px 100px;
+
+}
+
+.contactustext > h2{
+
+    background-color: #B9FF66;
+    padding: 5px 10px;
+    font-size: 35px;
+    font-family: spacefont;
+    border-radius: 10px;
+
+}
+
+.contactustext > p{
+
+    font-size: 18px;
+    font-family: spacefont;
+
+}
+
+/** Contact us form box */
+
+.contactusboxsection{
+
+    width: 100%;
+    height: 100vh;
+
+}
+
+.contactusboxsection > .contactusbox{
+
+    padding: 50px 100px;
+    display: flex;
+    height: 100%;
+
+}
+
+.contactusbox > .contactusformbox{
+
+    width: 50%;
+    background-color: #F3F3F3;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    overflow: hidden;
+
+}
+
+.contactusformbox > form{
+
+    padding-left: 50px;
+
+}
+
+form > #input1, #input2, textarea{
+
+    margin-bottom: 20px;
+
+}
+
+form > #input1, #input2{
+
+    width: 500px;
+    padding: 10px 10px;
+    font-family: spacefont;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1px solid black;
+    outline: none;
+    background-color: #fff;
+    margin-top: 10px;
+
+}
+
+form > textarea{
+
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 15px;
+    padding: 10px 10px;
+
+}
+
+form > span{
+
+    font-size: 17px;
+    font-family: spacefont;
+    display: inline-block;
+
+}
+
+form > #submitbtn{
+
+    width: 520px;
+    height: 50px;
+    background-color: #111;
+    border-radius: 10px;
+    color: #ffff;
+    font-family: spacefont;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+.contactusbox > .contactusimg{
+
+    width: 50%;
+
+}
+
+.contactusbox > .contactusimg img{
+
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    
+}
+
+/** footer section */
+footer{
+
+    width: 100%;
+    height: 70vh;
+    margin-top: 10%;
+
+}
+
+footer >  .footersection{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    /* background-color: #B9FF66; */
+
+}
+
+.footersection > .mainfooter{
+
+    width: 1350px ;
+    background-color: #191A23;
+    margin: auto;
+    height: 100%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+
+}
+
+.mainfooter > .footerhead{
+
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 50px 30px 50px;
+
+}
+
+/** first box */
+
+.footerhead > .firstbox{
+
+    display: flex;
+    align-items: center;
+    color: #fff;
+    gap: 10px;
+    font-size: 30px;
+    font-family: spacefont;
+
+}
+
+.firstbox > i{
+
+    transform: rotate(45deg);
+
+}
+
+.firstbox > h2{
+
+    font-size: 30px;
+
+}
+
+
+/** second box */
+
+.footerhead > .secondbox ul li{
+
+    display: inline-block;
+    list-style-type: none;
+    padding-right: 30px;
+    font-size: 20px;
+
+}
+
+.footerhead > .secondbox ul li a{
+
+    color: #fff;
+    font-family: spacefont;
+
+}
+
+/** third box */
+
+.footerhead > .thirdbox{
+
+    display: flex;
+    align-items: center;
+
+}
+
+.thirdbox > .socialicon i{
+
+    margin-right: 10px;
+    font-size: 20px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+/** footer contact section */
+.footercontactsection{
+
+   padding: 30px 50px;
+   display: flex;
+
+}
+
+.footercontactsection > .footercontact{
+
+    width: 45%;
+
+}
+
+.footercontact > span {
+
+    background-color: #B9FF66;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-family: spacefont;
+    padding: 5px 10px;
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 10px;
+
+}
+
+.footercontact > address{
+
+    font-size: 18px;
+    color: #fff;
+    font-family: spacefont;
+
+}
+
+.footercontactsection > .footeremail{
+
+    width: 60%;
+    background-color: #292A32;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footeremail > form #emailinput{
+
+    width: 350px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid white;
+    padding: 0px 20px;
+    color: #fff;
+    font-family: spacefont;
+    font-size: 17px;
+
+}
+
+.footeremail > form #emailinput::placeholder{
+
+    color: #fff;
+    font-family: spacefont;
+    font-size: 16px;
+
+}
+
+.footeremail > form #emailbtn{
+
+    width: 200px;
+    height: 50px;
+    background-color: #B9FF66;
+    border-radius: 10px;
+    font-size: 17px;
+    font-family: spacefont;
+    cursor: pointer;
+    font-weight: 500;
+
+}
+
+/** Copyright section */
+.copyrightsection{
+
+    width: 100%;
+
+}
+
+.copyrightsection > .copyrightpart{
+
+    padding: 20px 50px;
+
+}
+
+.copyrightpart > hr{
+
+    margin-bottom: 40px;
+
+}
+
+.copyrightpart > span{
+
+    font-size: 18px;
+    color: #fff;
+    margin-right: 30px;
+    font-family: spacefont;
+
+}
+
+.copyrightpart > a{
+
+    font-size: 18px;
+    color: #fff;
+    font-family: spacefont;
+
+}
+

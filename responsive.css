@@ -1,0 +1,749 @@
+@media(max-width: 1200px){
+
+    body{
+
+        width: 100%;;
+
+    }
+
+    /** header section */
+
+    header{
+
+        width: 100%;
+        background-color: #fff;
+
+    }
+
+    header > .headersection{
+
+        width: 100%;
+        background-color: #fff;
+        backdrop-filter: blur(20px);
+
+    }
+
+    .headersection > nav{
+
+        padding: 0px 10px;
+
+
+    }
+
+    nav > .menu ul li{
+
+        display: none;
+
+    }
+
+    nav > .menu ul #menubar{
+
+        font-size: 35px;
+        cursor: pointer;
+        display: block;
+
+    }
+
+    nav .menu ul #close{
+
+        font-size: 35px;
+        cursor: pointer;
+        display: none;
+
+    }
+
+    header > .responsivemenu{
+
+        position: fixed;
+        z-index: 9999;
+        top: 10%;
+
+    }
+
+    /** Hero section */
+    .herosection {
+
+        width: 100%;
+
+    }
+
+    .herosection > .subherosection {
+
+        display: flex;
+        flex-wrap: wrap;
+        padding: 50px 20px;
+
+    }
+
+    .subherosection > .textdiv{
+
+        width: 100%;
+        margin-bottom: 30px;
+
+    }
+
+    .subherosection > .textdiv h1{
+
+        font-size: 7vw;
+        line-height: 5vh;
+
+    }
+
+    .subherosection > .textdiv p{
+
+        font-size: 4vw;
+        line-height: 4vh;
+        width: 100%;
+
+    }
+
+    .subherosection > .imgdiv{
+
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+
+    }
+
+    .subherosection > .imgdiv img{
+
+        width: 100%;
+        border-radius: 20px;
+
+    }
+
+    .subherosection > .textdiv button{
+
+        width: 50vw;
+        height: 6vh;
+        font-size: 4vw;
+
+    }
+
+    /** company logo section */
+
+    .companylogo{
+
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .companylogo > .logobody{
+
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+
+    }
+
+    .logobody > img{
+
+        width: 30vw;
+
+    }
+
+    /** Service text section */
+
+    .servicetextsection {
+
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .servicetextsection > .stext{
+
+        display: flex;
+        flex-wrap: wrap;
+        padding: 40px 20px;
+        justify-content: center;
+
+    }
+
+    .stext > h2{
+
+        font-size: 10vw;
+
+    }
+    
+    .stext > p{
+
+        text-align: center;
+        font-size: 4vw;
+        line-height: 3vh;
+
+    }
+
+    /** service section box */
+    .servicesection{
+
+        height: 100%;
+        padding: 0px 0px 50px 0px;
+
+    }
+    .servicesection > .servicesectionbox{
+
+        width: 100%;
+        height: 100%;
+        padding: 0px;
+
+    }
+
+    .servicesectionbox > .box{
+
+        width: 371px;
+        height: 505px;
+
+    }
+
+    .box > .firstboxsection{
+
+        display: flex;
+        flex-direction: column;
+        padding: 0px 0px 0px 50px;
+
+    }
+
+    .firstboxsection > .boxtext{
+
+        width: 100%;
+
+    }
+
+    .boxtext > h3{
+
+        margin-bottom: 20px;
+
+    }
+
+    /** Let make me things section */
+
+    .letmakethingsbox{
+
+        width: 100%;
+        height: 100%;
+        margin-bottom: 30px;
+
+    }
+
+    .letmakethingsbox > .letmakethings{
+
+        height: 100%;
+        width: 85vw;
+        padding: 30px 0px 30px 0px;
+
+    }
+
+    .letmakethings > .letmakethingtext{
+
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 20px;
+
+    }
+
+    .letmakethingtext > h3{
+
+        font-size: 8vw;
+
+    }
+
+    .letmakethingtext > p{
+
+        font-size: 18px;
+        line-height: 35px;
+
+    }
+
+    .letmakethingtext > a button{
+
+        height: 5vh;
+        font-size: 18px;
+
+    }
+
+    .letmakethings > .letmakethingimg{
+
+        display: none;
+
+    }
+
+    /** Case study section boxes */
+
+    .casestudysection{
+
+        width: 80%;
+        height: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin: auto;
+        border-radius: 20px;
+
+    }
+
+    .casestudysection > .casestudytextsection{
+
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .casestudytextsection > h2{
+
+        font-size: 9vw;
+
+    }
+
+    .casestudytextsection > p{
+
+        width: 100%;
+        padding: 0px 10px;
+        font-size: 4vw;
+
+    }
+
+    /** Case study section boxes */
+
+    .casestudysectionbox{
+
+       width: 100%;
+       height: 100%;
+       padding-bottom: 50px;
+
+    }
+
+    .casestudysectionbox > .casestudybox{
+
+        height: 100%;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        padding: 40px 0px;
+
+    }
+
+    .casestudybox > .casebox1{
+
+        border-right: none;
+        padding: 0px 20px 50px 20px;
+        border-bottom: 2px solid snow;
+        text-align: center;
+
+    }
+
+    .casebox1 > p{
+
+        font-size: 3vw;
+        line-height: 35px;
+
+    }
+
+    .casestudybox > .casebox2{
+
+        border-right: none;
+        padding: 20px 20px 50px 20px;
+        border-bottom: 2px solid snow;
+        text-align: center;
+
+    }
+
+    .casebox2 > p{
+
+        font-size: 3vw;
+        line-height: 35px;
+
+    }
+
+    .casestudybox > .casebox3{
+
+        border-right: none;
+        padding: 20px 20px 50px 20px;
+        border-bottom: 2px solid snow;
+        text-align: center;
+
+    }
+
+    .casebox3 > p{
+
+        font-size: 3vw;
+        line-height: 35px;
+
+    }
+
+    /** Working process section */
+
+    .workingprocesssection{
+
+        width: 80%;
+        height: 100%;
+        margin: auto;
+
+    }
+
+    .workingprocesssection > .workingprocesstext{
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        text-align: center;
+
+    }
+
+    .workingprocesstext > h2{
+
+        font-size: 9vw;
+
+    }
+
+    .workingprocesstext > p{
+
+        width: 100%;
+        font-size: 4vw;
+
+    }
+
+    /** Work section toggle box */
+    .workingtoggleboxsection{
+
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .workingtoggleboxsection > .toggleboxes{
+
+        padding: 50px 10px;
+
+    }
+
+    .toggleboxes > .togglebox > .headingtext > .toggletext > h2{
+
+        font-size: 10vw;
+
+    } 
+
+    .toggleboxes > .togglebox > .headingtext > .toggletext > p{
+
+        font-size: 4vw;
+
+    } 
+
+    .togglebox > .subheadingtext p{
+
+        font-size: 4vw;
+        line-height: 40px;
+        width: 100%;
+
+    }
+
+    /** Team section */
+
+    .teamsection{
+
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .teamsection > .teamsectiontext{
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0px 20px;
+        text-align: center;
+
+    }
+
+    .teamsectiontext > h2{
+
+        font-size: 9vw;
+
+    }
+
+    .teamsectiontext > p{
+
+        font-size: 4vw;
+
+    }
+
+    /** Team section boxes */
+
+    .teamsectionboxes{
+
+        height: 100%;
+
+    }
+
+    .teamsectionboxes > .teamboxes{
+
+        height: 100%;
+        padding: 50px 10px 50px 10px;
+
+    }
+
+    .teamboxes > .teambox{
+
+        width: 100%;
+
+    }
+
+    /** Contact us box section */
+    .contactussection{
+
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .contactussection > .contactustext{
+
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 20px;
+        text-align: center;
+
+    }
+
+    .contactustext > h2{
+
+        font-size: 9vw;
+
+    }
+
+    .contactustext > p{
+
+        font-size: 4vw;
+
+    }
+
+    /** Contact us box section */
+    .contactusboxsection{
+
+        width: 100%;
+        height: 100%;
+        margin-top: 20px;
+         display: flex;
+        justify-content: center;
+
+    }
+
+    .contactusboxsection > .contactusbox{
+
+        width: 93vw;
+        padding: 20px 16px;
+
+    }
+
+    .contactusbox > .contactusformbox{
+
+        width: 100%;
+        border-radius: 50px;
+        padding: 10px;
+
+    }
+
+    .contactusformbox > form{
+
+        width: 100%;
+        padding: 50px 10px;
+
+    }
+
+    form > #input1, #input2{
+
+        width: 70vw;
+
+    }
+
+    form > textarea{
+
+        width: 70vw;
+
+    }
+
+    form > #submitbtn{
+
+        width: 75vw;
+
+    }
+
+    .contactusbox > .contactusimg{
+
+        display: none;
+
+    }
+
+    /** footer section */
+    footer{
+
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .footersection > .mainfooter{
+
+        padding: 0px 0px;
+        border-radius: 0px;
+
+    }
+
+    .mainfooter > .footerhead{
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 50px;
+
+    }
+
+    .footerhead > .firstbox {
+
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    .footerhead > .firstbox h2{
+
+        font-size: 7vw;
+
+    }
+
+    .footerhead > .firstbox i{
+
+        font-size: 45px;
+
+    }
+
+    .footerhead > .secondbox {
+
+        width: 100%;
+
+    }
+
+    .footerhead > .secondbox ul li{
+
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        font-size: 4vw;
+        margin-right: 0px;
+        text-align: center;
+        width: 100%;
+
+    }
+
+    .footerhead > .thirdbox {
+
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .footerhead > .thirdbox i {
+
+        margin-left: 10px;
+        font-size: 5vw;
+
+    }
+
+    /** footer contact section */
+    .footercontactsection{
+
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .footercontactsection > .footercontact{
+
+        width: 100%;
+        margin-bottom: 20px;
+
+    }
+
+    .footercontact > span{
+
+        font-size: 5vw;
+
+    }
+
+    .footercontact > address{
+
+        font-size: 3vw;
+
+    }
+
+    /** footer mail section */
+    .footercontactsection > .footeremail{
+
+        width: 100%;
+        /* padding: 20px; */
+
+    }
+
+    .footeremail > form{
+
+        width: 100%;
+        padding: 20px 0px;
+
+    }
+
+    .footeremail form > #emailinput{
+
+        width: 250px;
+        margin-bottom: 20px;
+
+    }
+
+    .footeremail form > #emailbtn{
+
+        width: 300px;
+
+    }
+
+    /** footer copyright section */
+    .copyrightsection{
+
+        width: 100%;
+
+    }
+
+    .copyrightsection > .copyrightpart{
+
+        text-align: center;
+
+    }
+
+    .copyrightsection > .copyrightpart span{
+
+        font-size: 4vw;
+
+    }
+
+    .copyrightsection > .copyrightpart a{
+
+        font-size: 4vw;
+
+    }
+
+
+}
